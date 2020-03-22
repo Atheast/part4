@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hcmVrIiwiaWQiOiI1ZTc2NjQ5MjExZWViNTI3OTQ2ZWI4YjgiLCJpYXQiOjE1ODQ4MzA4MTl9.BI8j0UQxPw8-6ZchgfRSt-gVLFoAdIModRJJQoiHEsw
+
+{
+    "title": "Blog6",
+    "author": "John Madden",
+    "url": "http://someblog.com",
+    "likes": 23
+}
