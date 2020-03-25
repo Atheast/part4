@@ -13,11 +13,11 @@ blogsRouter.post('/', async (req, res) => {
     const body = req.body;
 
     const decodedToken = jwt.verify(req.token, process.env.SECRET);
-
+	
     if(!req.token || !decodedToken.id) {
       return res.status(401).json({error: 'token missing or invalid'});
     }
-
+	
     const keys = Object.keys(body);
 
     if(!keys.includes('title') && !keys.includes('url')) {
@@ -80,6 +80,5 @@ blogsRouter.put('/:id', async(req,res) => {
   const result = await Blog.findByIdAndUpdate(req.params.id,blog,{new: true});
   res.json(result.toJSON()); 
 });
-
 
 module.exports = blogsRouter;

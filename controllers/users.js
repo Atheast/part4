@@ -27,4 +27,9 @@ usersRouter.get('/', async(req,res) => {
     res.json(result.map(x => x.toJSON()));
 });
 
+usersRouter.get('/:username', async(req,res) => {
+    const result = await User.find({username: req.params.username});
+    res.json(result.username);
+});
+
 module.exports = usersRouter;
