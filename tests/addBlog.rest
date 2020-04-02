@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpZCI6IjVlNzY1N2ExYmYxM2E4MGViOGU5M2E3YyIsImlhdCI6MTU4NTgzMjg5M30.jQFHlYog7utvqlD6n__fzJwmKCHj2QsxkSnAep3pxmk
+
+{
+    "title": "Not so much interesting Blog",
+    "author": "John Madden",
+    "url": "http://someblog.com"
+}
